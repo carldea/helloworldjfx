@@ -131,3 +131,23 @@ $ ./gradlew clean build run
 # IntelliJ and other IDEs add the following for run configurations.
 VM options 
 --module-path ${PATH_TO_FX} --add-modules javafx.controls com.helloworld.HelloFX
+
+# Fat Jar
+## Build and Run FatJar using Maven  
+```bash
+# Builds fat jar
+$ mvn compile package
+
+# Runs fat jar
+$ java --module-path $PATH_TO_FX --add-modules javafx.controls -jar shade/hellofx.jar
+```
+
+
+## Build and Run FatJar using Gradle
+```bash
+# Builds fat jar
+$ ./gradlew jar
+
+# Runs fat jar
+$ java --module-path $PATH_TO_FX --add-modules javafx.controls -jar build/libs/hellofx.jar
+```
