@@ -18,34 +18,19 @@ To manually install a JDK on a target platform you may have additional install i
 ### Java JDK 11 or later 
 Download the JDK to be installed on a target operating system.
 
-Oracle download at [https://www.oracle.com/java/technologies/javase-downloads.html](https://www.oracle.com/java/technologies/javase-downloads.html)
- - Bellsoft [https://bell-sw.com/](https://bell-sw.com/)
- - Adopt a JDK [https://adoptopenjdk.net/](https://adoptopenjdk.net/)
- - The latest and greatest JDKs at java.net [https://jdk.java.net/](https://jdk.java.net/)
- - Azul Zulu - [https://www.azul.com/downloads/zulu-community/](https://www.azul.com/downloads/zulu-community/)
- - Amazon Corretto - [https://aws.amazon.com/corretto/](https://aws.amazon.com/corretto/)
- - GraalVM from Oracle at - [https://www.graalvm.org/downloads/](https://www.graalvm.org/downloads/)
-
- SAP JDK - [https://sap.github.io/SapMachine/](https://sap.github.io/SapMachine/)
-
 |Java distro              | Location                          |
 |-------------------------|-----------------------------------|
 |Oracle                   |[https://www.oracle.com/java/technologies/javase-downloads.html](https://www.oracle.com/java/technologies/javase-downloads.html)|
-|Bellsoft           | [https://bell-sw.com/](https://bell-sw.com/) |
-|Adopt a JDK        | [https://adoptopenjdk.net/](https://adoptopenjdk.net/)|
-|Java Development Kit builds           | [https://jdk.java.net/](https://jdk.java.net/) |
-|Azul Zulu          | [https://www.azul.com/downloads/zulu-community/](https://www.azul.com/downloads/zulu-community/) |
-|Amazon Corretto    | [https://aws.amazon.com/corretto/](https://aws.amazon.com/corretto/)|
-|GraalVM (Oracle)   | [https://www.graalvm.org/downloads/](https://www.graalvm.org/downloads/)|
-|SAP                | [https://sap.github.io/SapMachine/](https://sap.github.io/SapMachine/)|
+|Bellsoft                 | [https://bell-sw.com/](https://bell-sw.com/) |
+|Adopt a JDK              | [https://adoptopenjdk.net/](https://adoptopenjdk.net/)|
+|Java Development Kit builds | [https://jdk.java.net/](https://jdk.java.net/) |
+|Azul Zulu                | [https://www.azul.com/downloads/zulu-community/](https://www.azul.com/downloads/zulu-community/) |
+|Amazon Corretto          | [https://aws.amazon.com/corretto/](https://aws.amazon.com/corretto/) |
+|GraalVM (Oracle)         | [https://www.graalvm.org/downloads/](https://www.graalvm.org/downloads/) |
+|SAP                      | [https://sap.github.io/SapMachine/](https://sap.github.io/SapMachine/) |
+
 ### Manager Download tools
 There are a number of software managers to download and use multiple JDKs.
-
- - SDK Man (All platforms)- [https://sdkman.io/](https://sdkman.io/)
- - HomeBrew (MacOS)- [https://brew.sh/](https://brew.sh/) 
- - Alternatives (Redhat/CentOS)
- - yum [https://access.redhat.com/solutions/9934](https://access.redhat.com/solutions/9934)
- - apt-get (Ubuntu) [https://help.ubuntu.com/community/AptGet/Howto](https://help.ubuntu.com/community/AptGet/Howto)
 
 |Manager         | Platform                          |Location                         |Notes |
 |----------------|-------------------------------|-----------------------------|------|
@@ -57,7 +42,7 @@ There are a number of software managers to download and use multiple JDKs.
 > **Note:** Based on your OS or Platform make sure you have the correct admin permissions.
 
 # Install OpenJFX
-Go to [https://gluonhq.com/products/javafx/](https://gluonhq.com/products/javafx/) to obtain the latest binaries. Simple download and expand into any directory. For commercial long term support check out the folks at GluonHQ at [https://gluonhq.com/services/javafx-support/](https://gluonhq.com/services/javafx-support/)
+Go to [https://gluonhq.com/products/javafx/](https://gluonhq.com/products/javafx/) to obtain the latest binaries. Simply download and expand into any directory. For commercial long term support check out the folks at GluonHQ at [https://gluonhq.com/services/javafx-support/](https://gluonhq.com/services/javafx-support/)
 
 >Gradle and Maven build scripts are using **OpenJFX version 14.0.1**.
 
@@ -143,6 +128,6 @@ $ gradle wrapper
 $ ./gradlew clean build run
 ```
 
-# IntelliJ
+# IntelliJ and other IDEs add the following for run configurations.
 VM options 
 --module-path ${PATH_TO_FX} --add-modules javafx.controls com.helloworld.HelloFX
