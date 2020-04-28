@@ -1,5 +1,5 @@
 # JavaFX App Hello World Non-Modular 
-This project is derived directly from [https://openjfx.io/openjfx-docs/](https://openjfx.io/openjfx-docs/) to create a **non-modular** JavaFX based Hello World application. Non-modular means the app is built to not use the Java Platform Module System (JPMS) (aka module path), but is using the older standard class path. 
+This project is derived directly from [https://openjfx.io/openjfx-docs/](https://openjfx.io/openjfx-docs/) and [https://github.com/openjfx/samples/tree/master/](https://github.com/openjfx/samples/tree/master/) to create a **non-modular** JavaFX based Hello World application. Non-modular means the app is built to not use the Java Platform Module System (JPMS) (aka module path), but is using the older standard class path. 
 
 This project has all three ways to compile and run the app consolidated into one place. The intent of this project lets anyone clone the project to quickly start a new JavaFX App project from scratch. 
 
@@ -20,7 +20,7 @@ Download the JDK to be installed on a target operating system.
 
 |Java distro              | Location                          |
 |-------------------------|-----------------------------------|
-|Oracle                   |[https://www.oracle.com/java/technologies/javase-downloads.html](https://www.oracle.com/java/technologies/javase-downloads.html)|
+|Oracle                   | [https://www.oracle.com/java/technologies/javase-downloads.html](https://www.oracle.com/java/technologies/javase-downloads.html)|
 |Bellsoft                 | [https://bell-sw.com/](https://bell-sw.com/) |
 |Adopt a JDK              | [https://adoptopenjdk.net/](https://adoptopenjdk.net/)|
 |Java Development Kit builds | [https://jdk.java.net/](https://jdk.java.net/) |
@@ -135,19 +135,24 @@ VM options
 # Fat Jar
 ## Build and Run FatJar using Maven  
 ```bash
-# Builds fat jar
-$ mvn compile package
-
-# Runs fat jar
-$ java --module-path $PATH_TO_FX --add-modules javafx.controls -jar shade/hellofx.jar
+# Builds and runs fat jar
+$ ./build-fat-jar.sh
 ```
 
+## Build and Run FatJar using Maven
+```bash
+# Builds a fat jar
+$ $ mvn compile package
+
+# Runs fat jar
+$ java -jar shade/hellofx.jar
+```
 
 ## Build and Run FatJar using Gradle
 ```bash
-# Builds fat jar
+# Builds a fat jar
 $ ./gradlew jar
 
 # Runs fat jar
-$ java --module-path $PATH_TO_FX --add-modules javafx.controls -jar build/libs/hellofx.jar
+$ java -jar build/libs/hellofx.jar
 ```

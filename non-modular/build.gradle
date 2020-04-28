@@ -17,7 +17,7 @@ mainClassName = 'com.helloworld.HelloFX'
 jar {
     baseName "hellofx"
     manifest {
-        attributes 'Main-Class': 'com.helloworld.HelloFX'
+        attributes 'Main-Class': 'com.helloworld.Launcher'
     }
     from {
         configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
@@ -26,6 +26,7 @@ jar {
 
 
 /**
+ * Fat jar
  * $ ./gradlew jar
- * $ java --module-path $PATH_TO_FX --add-modules javafx.controls -jar build/libs/hellofx.jar
+ * $ java -jar build/libs/hellofx.jar
  */

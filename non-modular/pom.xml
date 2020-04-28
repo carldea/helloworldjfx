@@ -83,7 +83,7 @@
               <transformers>
                 <transformer implementation=
                                      "org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>com.helloworld.HelloFX</mainClass>
+                  <mainClass>com.helloworld.Launcher</mainClass>
                 </transformer>
               </transformers>
             </configuration>
