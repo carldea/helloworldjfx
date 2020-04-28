@@ -1,6 +1,9 @@
 # Can't find what to ignore check out https://github.com/github/gitignore/tree/master/Global
 
 classes/
+libs/
+out/
+shade/
 
 # IntelliJ, Maven and Gradle
 build/
